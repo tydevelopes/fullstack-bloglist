@@ -19,7 +19,7 @@ test('blogs are returned as json', async () => {
   await api
     .get('/api/blogs')
     .expect(200)
-    .expect('title-Type', /application\/json/);
+    .expect('Content-Type', /application\/json/);
 });
 
 test('uid property of a blog should be id', async () => {
@@ -41,7 +41,7 @@ test('a valid blog can be added', async () => {
     .post('/api/blogs')
     .send(newBlog)
     .expect(201)
-    .expect('title-Type', /application\/json/);
+    .expect('Content-Type', /application\/json/);
 
   const blogsAtEnd = await helper.blogsInDb();
   expect(blogsAtEnd.length).toBe(helper.initialBlogs.length + 1);
@@ -64,7 +64,7 @@ test('a mising likes property defaults to 0', async () => {
     .post('/api/blogs')
     .send(newBlog)
     .expect(201)
-    .expect('title-Type', /application\/json/);
+    .expect('Content-Type', /application\/json/);
 
   const blogsAtEnd = await helper.blogsInDb();
   expect(blogsAtEnd.length).toBe(helper.initialBlogs.length + 1);
