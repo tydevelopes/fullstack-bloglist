@@ -26,7 +26,7 @@ const errorHandler = (error, request, response, next) => {
 };
 
 const tokenExtractor = (request, response, next) => {
-  console.log('FROM TOKEN EXTRACTOR: ', request.header);
+  //console.log('FROM TOKEN EXTRACTOR: ', request.header);
   const authorization = request.get('authorization');
   if (authorization && authorization.toLowerCase().startsWith('bearer')) {
     request.token = authorization.substring(7);

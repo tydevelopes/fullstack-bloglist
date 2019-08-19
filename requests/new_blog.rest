@@ -3,9 +3,8 @@ Content-Type: application/json
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imtvam8iLCJpZCI6IjVkNTYzYjdlZTg2OTc0NjU5NTNjOTAyZiIsImlhdCI6MTU2NTk5NzExNn0.qGf0TnJhsRnzQeWB8XYP2bWruuieZI0lG_fDdYMsAuE
 
 {
-  "title": "An overview of Progressive Web App development",
-  "author": "Oleg Romanyuk",
-  "url": "https://www.freecodecamp.org/news/practical-tips-on-progressive-web-app-development/",
-  "likes": 4,
-  "userId": "5d563b7ee8697465953c902f"
+  "title": "testing...",
+  "author": "ty frimp",
+  "url": "local.io",
+  "likes": 1
 }
